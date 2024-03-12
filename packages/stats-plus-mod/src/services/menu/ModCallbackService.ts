@@ -104,11 +104,12 @@ export class ModCallbackService {
           ? e
           : new Error(this.jsonSerializer.encode(e));
 
+        // eslint-disable-next-line @typescript-eslint/no-throw-literal -- Isaac expects a string to be thrown
         throw new ErrorWithContext(
           "Uncaught error in mod callback",
           { callbackType },
           err,
-        );
+        ).getFullMessage(this.jsonSerializer);
       }
     };
   }
