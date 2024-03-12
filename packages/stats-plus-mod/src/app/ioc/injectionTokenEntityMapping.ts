@@ -5,7 +5,7 @@ import { InjectionToken } from "~/app/ioc/InjectionToken";
 import { singleton } from "~/app/ioc/resolution/singleton";
 import { createMod } from "~/app/createMod";
 import { IngameValue } from "~/services/IngameValue";
-import { ModCallbackService } from "~/services/menu/ModCallbackService";
+import { ModCallbackService } from "~/services/ModCallbackService";
 
 // For some reason, TSTL won't make it work without this pointless adapter.
 const jsonSerializerAdapter: JsonSerializer = {

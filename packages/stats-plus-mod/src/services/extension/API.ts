@@ -5,7 +5,7 @@ import { Logger } from "~/Logger";
 import { LifecycleService } from "~/services/LifecycleService";
 import { Singleton } from "~/app/ioc/decorators/Singleton";
 import { Inject } from "~/app/ioc/decorators/Inject";
-import { ModCallbackService } from "~/services/menu/ModCallbackService";
+import { ModCallbackService } from "~/services/ModCallbackService";
 import { ExtensionService } from "~/services/extension/ExtensionService";
 import { StandaloneConditionDefinition } from "~/entities/extension/condition/standalone/StandaloneConditionDefinition";
 import { Middleware } from "~/entities/extension/middleware/Middleware";

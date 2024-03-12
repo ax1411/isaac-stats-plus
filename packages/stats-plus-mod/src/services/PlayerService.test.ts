@@ -5,7 +5,7 @@ import { mock } from "vitest-mock-extended";
 import { ModCallback } from "isaac-typescript-definitions";
 import { PlayerService } from "~/services/PlayerService";
 import { createModMockWithEvents } from "~/testing/mocks/createModMockWithEvents";
-import { ModCallbackService } from "~/services/menu/ModCallbackService";
+import { ModCallbackService } from "~/services/ModCallbackService";
 import { createJsonSerializerMock } from "~/testing/mocks/services/createJsonSerializerMock";
 
 describe("PlayerService", () => {

@@ -9,7 +9,7 @@ import { PlayerService } from "~/services/PlayerService";
 import { Singleton } from "~/app/ioc/decorators/Singleton";
 import { CORE_STAT_EXTENSIONS } from "~/data/stat/CORE_STAT_EXTENSIONS";
 import { HashMap } from "~/structures/HashMap";
-import { ModCallbackService } from "~/services/menu/ModCallbackService";
+import { ModCallbackService } from "~/services/ModCallbackService";
 import { MetricChange } from "~/entities/metric/MetricChange";
 import { TimeProvider } from "~/services/renderer/TimeProvider";
 import { ErrorWithContext } from "~/errors/ErrorWithContext";

@@ -2,7 +2,7 @@ import type { Easing } from "~/entities/interpolation/Interpolation";
 import { ModCallback } from "isaac-typescript-definitions";
 import { Singleton } from "~/app/ioc/decorators/Singleton";
 import { Inject } from "~/app/ioc/decorators/Inject";
-import { ModCallbackService } from "~/services/menu/ModCallbackService";
+import { ModCallbackService } from "~/services/ModCallbackService";
 import { Time } from "~/entities/Time";
 import { InjectionToken } from "~/app/ioc/InjectionToken";
 import { constrain } from "~/util/math/constrain";

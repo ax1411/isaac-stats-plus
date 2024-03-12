@@ -1,7 +1,7 @@
 import { ModCallback } from "isaac-typescript-definitions";
 import { Singleton } from "~/app/ioc/decorators/Singleton";
 import { Inject } from "~/app/ioc/decorators/Inject";
-import { ModCallbackService } from "~/services/menu/ModCallbackService";
+import { ModCallbackService } from "~/services/ModCallbackService";
 import { InjectionToken } from "~/app/ioc/InjectionToken";
 
 @Singleton()

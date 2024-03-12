@@ -11,7 +11,7 @@ import { ProviderDisplaySettingsDefinition } from "~/entities/extension/provider
 import { ProviderComputablesDefinition } from "~/entities/extension/provider/ProviderComputablesDefinition";
 import { ProviderColor } from "~/entities/config/appearance/ProviderColor";
 import { Inject } from "~/app/ioc/decorators/Inject";
-import { ModCallbackService } from "~/services/menu/ModCallbackService";
+import { ModCallbackService } from "~/services/ModCallbackService";
 
 @Singleton()
 export class APIProviderMapper {

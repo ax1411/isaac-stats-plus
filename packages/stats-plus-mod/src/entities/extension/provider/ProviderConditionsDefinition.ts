@@ -1,6 +1,6 @@
 import type * as StatsPlusAPI from "@isaac-stats-plus/api";
 import type { ProviderExtension } from "~/entities/extension/provider/ProviderExtension";
-import type { ModCallbackService } from "~/services/menu/ModCallbackService";
+import type { ModCallbackService } from "~/services/ModCallbackService";
 import { CompanionConditionExtension } from "~/entities/extension/condition/companion/CompanionConditionExtension";
 import { CompanionConditionDefinition } from "~/entities/extension/condition/companion/CompanionConditionDefinition";
 import { HashMap } from "~/structures/HashMap";

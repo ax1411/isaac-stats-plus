@@ -1,5 +1,5 @@
 import type { Subject } from "~/types/events/Subject";
-import type { ModCallbackService } from "~/services/menu/ModCallbackService";
+import type { ModCallbackService } from "~/services/ModCallbackService";
 import { ModCallback } from "isaac-typescript-definitions";
 import { EventEmitter } from "~/util/events/EventEmitter";
 

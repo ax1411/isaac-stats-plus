@@ -2,7 +2,7 @@ import type * as StatsPlusAPI from "@isaac-stats-plus/api";
 import type { ConditionDefinition } from "~/types/extension/condition/ConditionDefinition";
 import type { ProviderInstanceHandle } from "~/entities/extension/provider/handle/ProviderInstanceHandle";
 import type { CompanionConditionExtension } from "~/entities/extension/condition/companion/CompanionConditionExtension";
-import type { ModCallbackService } from "~/services/menu/ModCallbackService";
+import type { ModCallbackService } from "~/services/ModCallbackService";
 import { ModCallback } from "isaac-typescript-definitions";
 import { StructuralComparator } from "~/services/StructuralComparator";
 

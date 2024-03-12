@@ -4,7 +4,7 @@ import { LifecycleService } from "~/services/LifecycleService";
 import { Player } from "~/entities/player/Player";
 import { Singleton } from "~/app/ioc/decorators/Singleton";
 import { Inject } from "~/app/ioc/decorators/Inject";
-import { ModCallbackService } from "~/services/menu/ModCallbackService";
+import { ModCallbackService } from "~/services/ModCallbackService";
 import { InjectionToken } from "~/app/ioc/InjectionToken";
 
 @Singleton()

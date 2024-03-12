@@ -11,7 +11,7 @@ import { Inject } from "~/app/ioc/decorators/Inject";
 import { API } from "~/services/extension/API";
 import { Logger } from "~/Logger";
 import { ErrorWithContext } from "~/errors/ErrorWithContext";
-import { ModCallbackService } from "~/services/menu/ModCallbackService";
+import { ModCallbackService } from "~/services/ModCallbackService";
 import { GameService } from "~/services/GameService";
 
 @Singleton()

@@ -6,7 +6,7 @@ import { PlayerService } from "~/services/PlayerService";
 import { Logger } from "~/Logger";
 import { Singleton } from "~/app/ioc/decorators/Singleton";
 import { Inject } from "~/app/ioc/decorators/Inject";
-import { ModCallbackService } from "~/services/menu/ModCallbackService";
+import { ModCallbackService } from "~/services/ModCallbackService";
 import { TimeProvider } from "~/services/renderer/TimeProvider";
 import { ConfigService } from "~/services/config/ConfigService";
 import { InjectionToken } from "~/app/ioc/InjectionToken";
