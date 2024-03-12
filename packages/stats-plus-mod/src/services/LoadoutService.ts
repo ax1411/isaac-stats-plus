@@ -23,16 +23,8 @@ export class LoadoutService {
     @Inject(ProviderFactory) private readonly providerFactory: ProviderFactory,
   ) {}
 
-  public getEntry(slot: StatSlot): LoadoutEntry {
-    const entry = this.entries.get(slot);
-    if (entry === undefined) {
-      throw new ErrorWithContext("No entry found for the given slot.", {
-        playerIndex: slot.player.index,
-        stat: slot.stat,
-      });
-    }
-
-    return entry;
+  public getEntry(slot: StatSlot): LoadoutEntry | undefined {
+    return this.entries.get(slot);
   }
 
   public reload(): void {

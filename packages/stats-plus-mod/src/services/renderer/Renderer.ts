@@ -23,6 +23,7 @@ import { RGBAColor } from "~/entities/renderer/RGBAColor";
 import { RGBColor } from "~/entities/renderer/RGBColor";
 import { speed } from "~/core/stats/speed";
 import { Interpolation } from "~/entities/interpolation/Interpolation";
+import { Logger } from "~/Logger";
 
 @Singleton()
 export class Renderer {
@@ -62,6 +63,8 @@ export class Renderer {
     );
   }
 
+  private readonly logger = Logger.for(Renderer.name);
+
   private readonly providerFont: Font;
 
   public constructor(
@@ -90,6 +93,15 @@ export class Renderer {
 
   private renderSlot(slot: StatSlot): void {
     const loadoutEntry = this.loadoutService.getEntry(slot);
+
+    if (loadoutEntry === undefined) {
+      this.logger.warn("No loadout entry found for the given stat slot.", {
+        playerIndex: slot.player.index,
+        stat: slot.stat,
+      });
+
+      return;
+    }
 
     this.renderValue(slot, loadoutEntry);
     this.renderChange(slot, loadoutEntry);
